@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="build/tailwind.css">
+
+  <title>Dzintars Cleaning Services</title>
+
+  <style>
+    #menu-toggle:checked+#menu {
+      display: block;
+    }
+
+    #dropdown-toggle:checked+#dropdown {
+      display: block;
+    }
+
+    a,
+    span {
+      position: relative;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    a.arrow,
+    span.arrow {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    a.arrow .arrow_icon,
+    span.arrow .arrow_icon {
+      position: relative;
+      margin-left: 0.5em;
+    }
+
+    a.arrow .arrow_icon svg,
+    span.arrow .arrow_icon svg {
+      transition: transform 0.3s 0.02s ease;
+      margin-right: 1em;
+    }
+
+    a.arrow .arrow_icon::before,
+    span.arrow .arrow_icon::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #38b2ac;
+      transform: translateY(-50%);
+      transition: width 0.3s ease;
+    }
+
+    a.arrow:hover .arrow_icon::before,
+    span.arrow:hover .arrow_icon::before {
+      width: 1em;
+    }
+
+    a.arrow:hover .arrow_icon svg,
+    span.arrow:hover .arrow_icon svg {
+      transform: translateX(0.75em);
+    }
+
+    /* .cover {
+      border-bottom-right-radius: 128px;
+    } */
+
+    .bg-blue-teal-gradient {
+      background: rgb(49, 130, 206);
+      background: linear-gradient(90deg, rgba(49, 130, 206, 1) 0%, rgba(56, 178, 172, 1) 100%);
+    }
+
+    /* @media (min-width: 1024px) {
+      .cover {
+        border-bottom-right-radius: 256px;
+      }
+    } */
+  </style>
+</head>
+
+<body class="antialiased bg-white font-sans text-gray-900">
+
+  <main class="w-full">
+
+    <!-- start header -->
+    <header class="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
+      <div class="hidden md:flex justify-between items-center py-2 border-b text-sm py-3"
+        style="border-color: rgba(255,255,255,.25)">
+        <div class="">
+          <ul class="flex text-white">
+            <li>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
+                  <path
+                    d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z" />
+                </svg>
+
+                <span class="ml-2">25, Sycamore Close, Tilbury, RM18 7TB</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between py-6">
+        <div class="w-1/2 md:w-auto">
+          <a href="index.html" class="text-white font-bold text-2xl">
+            Dzintars Cleaning Services
+          </a>
+        </div>
+
+        <label for="menu-toggle" class="pointer-cursor md:hidden block"><svg class="fill-current text-white"
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg></label>
+
+        <input class="hidden" type="checkbox" id="menu-toggle">
+
+        <div class="hidden md:block w-full md:w-auto" id="menu">
+          <nav
+            class="w-full bg-white md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
+            <ul class="md:flex items-center">
+              <li class="md:ml-6 mt-3 md:mt-0">
+                <a class="inline-block font-semibold px-4 py-2 text-white bg-blue-600 md:bg-transparent md:text-white border border-white rounded"
+                  href="contact_us.html">Book
+                  Appointment</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start hero -->
+    <div class="bg-gray-100">
+      <section class="cover bg-blue-teal-gradient relative bg-blue-600 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex
+      items-center min-h-screen">
+        <div class="h-full absolute top-0 left-0 z-0">
+          <img src="images/cover-bg.jpg" alt="" class="w-full h-full object-cover opacity-20">
+        </div>
+
+        <div class="lg:w-3/4 xl:w-2/4 relative z-10 h-100 lg:mt-16">
+          <div>
+            <h1 class="text-white text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">A better life starts with a
+              clean environment.</h1>
+            <p class="text-blue-100 text-xl md:text-2xl leading-snug mt-4">Welcome to Dzintars Cleaning Services
+              where
+              trust
+              and precision are priorities.</p>
+            <a href="contact_us.html" class="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold">Book
+              Appointment</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end hero -->
+
+    <!-- start about -->
+    <section class="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32">
+      <div class="flex flex-col lg:flex-row lg:-mx-8">
+        <div class="w-full lg:w-1/2 lg:px-8">
+          <h2 class="text-3xl leading-tight font-bold mt-4">Welcome to Dzintars Cleaning Services</h2>
+          <p class="text-lg mt-4 font-semibold">Your Trusted Cleaning Experts</p>
+          <p class="mt-2 leading-relaxed">At Dzintars Cleaning Services, we are dedicated to providing top-notch cleaning services tailored to your needs.
+             Our experienced team ensures your space is immaculate, whether it's your home, office, or industrial facility.</p>
+        </div>
+
+        <div class="w-full lg:w-1/2 lg:px-8 mt-12 lg:mt-0">
+          <div class="md:flex">
+            <div>
+              <div class="w-16 h-16 bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="md:ml-8 mt-4 md:mt-0">
+              <h4 class="text-xl font-bold leading-tight">Comprehensive Cleaning Solutions</h4>
+              <p class="mt-2 leading-relaxed">Our diverse services ensure that all your cleaning needs are met with precision and care. From residential and commercial cleaning to industrial and specialized services, we have you covered. 
+                Enjoy a spotless environment with our comprehensive solutions.</p>
+            </div>
+          </div>
+
+          <div class="md:flex mt-8">
+            <div>
+              <div class="w-16 h-16 bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="md:ml-8 mt-4 md:mt-0">
+              <h4 class="text-xl font-bold leading-tight">Personalized Cleaning Plans</h4>
+              <p class="mt-2 leading-relaxed">We tailor our cleaning services to match your specific requirements and preferences. 
+                Whether you need regular home cleaning, thorough office maintenance, or specialized industrial cleaning, our dedicated team will deliver exceptional results. Your satisfaction is our priority.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:flex md:flex-wrap mt-24 text-center md:-mx-4">
+        <div class="md:w-1/2 md:px-4 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="images/housekeeping-80.png" alt="" class="h-20 mx-auto">
+
+            <h4 class="text-xl font-bold mt-4">Residential Cleaning Services:</h4>
+            <p class="mt-1">Regular and deep home cleaning, move-in/move-out cleaning, and post-construction cleaning.</p>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="images/floor-scrubber-80.png" alt="" class="h-20 mx-auto">
+
+            <h4 class="text-xl font-bold mt-4">Commercial Cleaning Services</h4>
+            <p class="mt-1">Office spaces, retail & manufacturing, and janitorial cleaning, including event and occassion cleaning.</p>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="images/vacuum-cleaner-80.png" alt="" class="h-20 mx-auto">
+
+            <h4 class="text-xl font-bold mt-4">Industrial Cleaning Services</h4>
+            <p class="mt-1">Cleaning for factories, warehouses, and machinery, including hazardous waste removal.</p>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
+          <div class="bg-white rounded-lg border border-gray-300 p-8">
+            <img src="images/carpet-cleaning-80.png" alt="" class="h-20 mx-auto">
+
+            <h4 class="text-xl font-bold mt-4">Specialized Cleaning Services</h4>
+            <p class="mt-1">Medical facility cleaning, carpet and upholstery cleaning, and window cleaning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+
+    <!-- start testimonials -->
+    <section class="relative bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-16 lg:py-32">
+      <div class="flex flex-col lg:flex-row lg:-mx-8">
+        <div class="w-full lg:w-1/2 lg:px-8">
+          <h2 class="text-3xl leading-tight font-bold mt-4">Why Choose Dzintars Cleaning Services?</h2>
+          <p class="mt-2 leading-relaxed">Our exceptional team of professionals uses the latest cleaning techniques and eco-friendly products to ensure your space is spotless and safe. We pride ourselves on our attention to detail and commitment to customer satisfaction. Whether it's a residential, commercial, or industrial setting, Dzintars Cleaning Services delivers impeccable results every time.
+
+            Choose Dzintars Cleaning Services for reliable, efficient, and thorough cleaning solutions tailored to your specific needs. Experience the difference of a truly dedicated cleaning service.
+            </p>
+        </div>
+
+        <div class="w-full md:max-w-md md:mx-auto lg:w-1/2 lg:px-8 mt-6 mt:md-0">
+          <div class="opacity-50 rounded-lg"> <img src="images/whychoose.jpg" alt="whychoose"></div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonials -->
+
+    <!-- start blog -->
+    <section class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
+      <div class="">
+        <h2 class="text-3xl leading-tight font-bold">Health Blog</h2>
+      </div>
+
+
+      <div class="md:flex mt-12 md:-mx-4">
+        <div class="md:px-4 md:w-1/2 xl:w-1/4">
+          <div class="bg-white rounded border border-gray-300">
+            <div class="w-full">      <a target="_blank" href="https://www.cleanlivingint.com/blogs/clean-living-blog/bacteria-based-cleaning"><img src="images/pexels-bacteriabased.jpg" alt="bacteriabasedcleaning"></a></div>
+            <div class="p-4">
+              <div class="flex items-center text-sm">
+                <span class="text-teal-500 font-semibold">Health & Lifestyle</span>
+                <span class="ml-4 text-gray-600">29 March, 2024</span>
+              </div>
+              <p class="text-lg font-semibold leading-tight mt-4">An Introduction to Bacteria Based Cleaning</p>
+              <p class="text-gray-600 mt-1">Microbes are what sit at the heart of our cleaning revolution. The nutritional benefits of a healthy gut microbiom...
+              </p>
+            </div>
+          </div>
+        </div>
+  
+
+       
+        <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
+          <div class="bg-white rounded border border-gray-300 ">
+            <div class="w-full"> <a target="_blank" href="https://www.cleanlivingint.com/blogs/clean-living-blog/spring-is-in-the-air"><img src="images/pexels-karolina-grabowska-4239031.jpg" alt="springcleaning"></a></div>
+            <div class="p-4">
+              <div class="flex items-center text-sm">
+                <span class="text-teal-500 font-semibold">Health & Lifestyle</span>
+                <span class="ml-4 text-gray-600">14 March, 2024</span>
+              </div>
+              <p class="text-lg font-semibold leading-tight mt-4">Spring is in the air: Make your home healthier this season/p>
+              <p class="text-gray-600 mt-1">Breaking news! It was reported early this week that the sun had been spotted! It was there for just one tantalisin...
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
+          <div class="bg-white rounded border border-gray-300 ">
+            <div class="w-full"><a target="_blank" href="https://www.cleanlivingint.com/blogs/clean-living-blog/natues-way-removing-chemicals-plastic-waste"><img src="images/pexels-mali-802221.jpg" alt="plasticwaste"></a></div>
+            <div class="p-4">
+              <div class="flex items-center text-sm">
+                <span class="text-teal-500 font-semibold">Health & Lifestyle</span>
+                <span class="ml-4 text-gray-600">01 May, 2024</span>
+              </div>
+              <p class="text-lg font-semibold leading-tight mt-4">Natures Way - Removing Chemicals & Plastic Waste</p>
+              <p class="text-gray-600 mt-1">A new range of revolutionary cleaning products has been launched. The Clean Living range of natural household clea...
+              </p>
+            </div>
+          </div>
+        </div>
+   
+
+        
+        <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
+          <div class="bg-white rounded border border-gray-300 ">
+            <div class="w-full"><a target="_blank" href="https://www.cleanlivingint.com/blogs/clean-living-blog/ditch-toxic-chemicals-and-clean-your-home-with-healthy-bacteria"><img src="images/pexels-lilartsy-1325619.jpg" alt=""></a></div>
+            <div class="p-4">
+              <div class="flex items-center text-sm">
+                <span class="text-teal-500 font-semibold">Health & Lifestyle</span>
+                <span class="ml-4 text-gray-600">21 Feb, 2024</span>
+              </div>
+              <p class="text-lg font-semibold leading-tight mt-4">The Dirty Secrets in your Undersink Cupboard</p>
+              <p class="text-gray-600 mt-1">A typical UK household contains an alarming amount of hazardous chemicals, many of them lurking under the sink. A l...
+              </p>
+            </div>
+          </div>
+        </div>
+     
+
+      </div>
+    </section>
+    <!-- end blog -->
+
+    <!-- start cta -->
+    <section
+      class="relative bg-blue-teal-gradient px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 text-center md:text-left">
+      <div class="md:flex md:items-center md:justify-center">
+        <h2 class="text-xl font-bold text-white">Get in touch with us today!
+        <a href="contact_us.html"
+          class="px-8 py-4 bg-white text-blue-600 rounded inline-block font-semibold md:ml-8 mt-4 md:mt-0">Book
+          Appointment</a>
+      </div>
+    </section>
+    <!-- end cta -->
+
+    <!-- start footer -->
+    <footer class="relative bg-gray-900 text-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 lg:py-24">
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full lg:w-2/6 lg:mx-4 lg:pr-8">
+          <h3 class="font-bold text-2xl">Dzintars Cleaning Services</h3>
+          <p class="text-gray-400">Your go to for Cleanliness with a mix of Precision and Love.</p>
+        </div>
+
+
+        <div class="w-full lg:w-2/6 mt-8 lg:mt-0 lg:mx-4 lg:pr-8">
+          <h5 class="uppercase tracking-wider font-semibold text-gray-500">Contact Details</h5>
+          <ul class="mt-4">
+            <li>
+              <a href="#" title="" class="flex items-center opacity-75 hover:opacity-100">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z" />
+                  </svg>
+                </span>
+                <span class="ml-3">
+                  25, Sycamore Close, Tilbury, RM18 7TB
+                </span>
+              </a>
+            </li>
+            <li class="mt-4">
+              <a href="#" title="" class="block flex items-center opacity-75 hover:opacity-100">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10c5.514,0,10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+                    <path d="M13 7L11 7 11 13 17 13 17 11 13 11z" /></svg>
+                </span>
+                <span class="ml-3">
+                  Mon - Fri: 9:00 - 19:00<br>
+                  Closed on Weekends
+                </span>
+              </a>
+            </li>
+            <li class="mt-4">
+              <a href="#" title="" class="block flex items-center opacity-75 hover:opacity-100">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M20,4H4C2.896,4,2,4.896,2,6v12c0,1.104,0.896,2,2,2h16c1.104,0,2-0.896,2-2V6C22,4.896,21.104,4,20,4z M20,8.7l-8,5.334 L4,8.7V6.297l8,5.333l8-5.333V8.7z" />
+                  </svg>
+                </span>
+                <span class="ml-3">
+                  support@dzintarscleaningservices.com
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-full lg:w-1/6 mt-8 lg:mt-0 lg:mx-4">
+          <p class="text-sm text-gray-400 mt-12">© 2024 Dzintars. <br class="hidden lg:block">All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+  </main>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131505823-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131505823-4');
+  </script>
+
+</body>
+
+</html>
